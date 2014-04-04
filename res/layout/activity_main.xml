@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    tools:context=".MainActivity" > 
+    
+    <RelativeLayout 
+        android:id="@+id/nonVideoLayout" 
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent" > 
+       
+        <com.new_movie_ex.VideoEnabledWebView 
+            android:id="@+id/webView" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+             /> 
+             <TableRow
+         android:id="@+id/tableRow"
+           android:layout_width="wrap_content"
+          android:layout_height="wrap_content" 
+          android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+               <ProgressBar
+            android:id="@+id/progressBar"
+            
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="102dp"
+            android:layout_height="102dp" />
+                </TableRow>
+               <TableRow
+         android:id="@+id/tableRow2"
+           android:layout_width="match_parent"
+          android:layout_height="wrap_content" 
+          
+         android:layout_alignParentBottom="true">
+        <com.google.ads.AdView
+             xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+             android:id="@+id/ad"
+             android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="a152f8631330bc6"
+             />    
+      </TableRow>
+
+    </RelativeLayout> 
+  
+    <FrameLayout 
+        android:id="@+id/videoLayout" 
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent" 
+        >
+    </FrameLayout> 
+    
+    
+</RelativeLayout> 
+
